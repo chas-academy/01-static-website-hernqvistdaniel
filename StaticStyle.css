@@ -21,11 +21,11 @@ html, body {
 }
 
 .header {
-    /* background-image: linear-gradient(lightgrey, rgba(128, 128, 128, 0.788)); */
     padding: 3%;
 }
 
 .intro {
+    padding: 10%;
     text-align: center;
     font-style: italic;
 }
@@ -43,19 +43,22 @@ body {
     
 }
 
-.navigation, a {
-    margin-top: 1%;
-    font-size: 16px;
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-    padding: 1%;
+}
+
+.navigation > a {
+    font-size: 16px;
     transition: all .2s ease-in-out;
+    margin-top: 1%;
+    padding: 1%;
     margin-bottom: 5%;
 }
 
-a:hover {
+.navigation > a:hover {
     background-image: linear-gradient(lightgrey, grey);
     border-radius: 10%;
     border-spacing: 100px;
@@ -64,28 +67,49 @@ a:hover {
 
 h2 {
     font-size: 30px;
+    padding: 5%;
 }
 
-section {
+section, footer {
     margin: 10%;   
     text-align: center;
 }
 
 .infoboxes {
-    width: 100%;
+    margin: 10%;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+i {
+    width: 20%;
+    height: 20;
 }
 
 
+.uppdragBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4%;
+    font: 10px;
+    font-style: italic;
+}
 
+.uppdragImgs {
+    width: 60%;
+    height: 60%;
+    border-radius: 5%;
+    transition: all .2s ease-in-out;
+    filter: grayscale(100%);
+}
 
-
-
-
-
+.uppdragImgs:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
 
 
 @media screen and (max-width: 406px) {
@@ -93,6 +117,13 @@ section {
         flex-direction: column;
     }
     h1 {
-        font-size: 14px;
+        font-size: 24px;
+    }
+    .uppdragBoxes {
+        flex: wrap;
+        margin: 1%;
+    }
+    figcaption {
+        font-size: 13px;
     }
 }
