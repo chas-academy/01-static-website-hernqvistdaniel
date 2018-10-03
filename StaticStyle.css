@@ -9,7 +9,15 @@
 
 
 html, body {
+    padding: 0.5%;
     font-family: 'Montserrat', sans-serif;
+}
+
+.superContainer {
+    border: 1px solid black;
+    border-radius: 30px;
+    /* background-image: url(img/background-balance-business-583846.jpg); */
+    background-image: linear-gradient(45deg,blue, black);   
 }
 
 .logo {
@@ -50,11 +58,6 @@ h1 {
     font-weight: bold;
 }
 
-body {
-    /* background-image: url(img/background-balance-business-583846.jpg); */
-    background-image: linear-gradient(45deg,grey, black);
-    
-}
 
 .navigation {
     display: flex;
