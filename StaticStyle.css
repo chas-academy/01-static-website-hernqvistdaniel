@@ -14,10 +14,14 @@ html, body {
 }
 
 .superContainer {
-    border: 1px solid black;
+    border: 1px solid rgb(22, 4, 113);
     border-radius: 30px;
     /* background-image: url(img/background-balance-business-583846.jpg); */
-    background-image: linear-gradient(45deg,blue, black);   
+     
+}
+
+.main-container {
+    background-image: linear-gradient(45deg, rgb(22, 4, 113), blue, rgb(22, 4, 113));
 }
 
 h1 {
@@ -28,25 +32,30 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-size: 30px;
     padding: 5%;
 }
 
 h3 {
     font-size: 20px;
-    padding: 5%;
+    padding: 0%;
 }
 
 .logo {
+    display: flex;
     float: left;
     width: 10%;
     height: 10%;
     filter: grayscale(90%);
     border-radius: 30%;
+    flex-shrink: 1;
 }
 
 .header {
+    height: 200px;  
     padding: 5%;
+    background-color: rgb(22, 4, 113);
 }
 
 .navigation {
@@ -54,6 +63,8 @@ h3 {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    background-color: rgb(22, 4, 113);
+    padding: 1%
 }
 
 .navigation > a {
@@ -75,7 +86,7 @@ h3 {
 .intro {
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding: 0% 15%;
     margin: 5%;
     align-items: center;
     justify-content: center;
@@ -89,13 +100,15 @@ h3 {
 }
 
 .introitem2 {
-    height: auto%;
+    height: auto;
     width: 60%;
 }
+
 .johnnyComment {
     justify-content: flex-end;
     font-size: 16px;
     font-style: italic;
+    padding-bottom: 2%;
 }
 
 .johnnyAuthor {
@@ -110,21 +123,23 @@ h3 {
 }
 
 section {
-    margin: 10%;   
-    text-align: center;
+    /* margin: 0%;   
+    text-align: center; */
 }
 
 
 .infoboxes {
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 10%;
+    height: 200px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: rgb(22, 4, 113);
 }
 
+.infobottom {
+    background-color: rgb(22, 4, 113);
+}
 
 i {
     width: 20%;
@@ -133,9 +148,12 @@ i {
 
 footer {
     text-align: center;
+    background-color: rgb(22, 4, 113);
 }
 
-
+.uppdrag {
+    text-align: center;
+}
 .uppdragBoxes {
     display: flex;
     flex-direction: row;
@@ -163,23 +181,86 @@ figcaption {
     margin: 5%;
 }
 
+.about {
+    display: grid;
+    grid-template-areas:
+        'video video rundtur1'
+        'video video rundtur2';
+    grid-gap: 10px;
+    text-align: center;
+    margin: 0% 10%;
+}
+
+.abouth {
+    text-align: center;
+}
+
 .youtubevid {
-    display: flex;
-    flex-wrap: wrap;
+    grid-area: video;
     align-items: center;
     justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+}
+
+.rundtur1 {
+    grid-area: rundtur1;
+    background: url(img/office.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rundtur2 {
+    grid-area: rundtur2;
+    background: url(img/uppdrag.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .jobb {
-    margin: 0%;
+    display: grid;
+    grid-template-areas:
+        'spot1 spot1 pdf'
+        'spot2 spot2 pdf'
+        'spot3 spot3 pdftext';
+        grid-gap: 10px;
+        
+        padding: 0% 15%;
 }
 
-.ansokning {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.spot {
+    height: 150px;
 }
+
+.spot p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.spot1 {
+    grid-area: spot1;
+}
+
+.spot2 {
+    grid-area: spot2;
+}
+
+.spot3 {
+    grid-area: spot3;
+}
+
+.pdf {
+    grid-area: pdf;
+}
+
+.pdftext {
+    grid-area: pdftext;
+    
+}
+
 
 i {
     transition: all .2s ease;
@@ -213,6 +294,13 @@ i:hover {
         font-size: 11px;
     }
     .infoboxes {
-        padding: 3%;
+        margin: 0%;
+        justify-content: space-between;
+    }
+    .header {
+        height: 90px;
+    }
+    .navigation > a {
+        font-size: 14px;
     }
 }
