@@ -14,23 +14,23 @@
 <body>
     <div class="superContainer">
 
-    <header class="header" id="#top"> 
+    <header role="banner" class="header" id="#top"> 
         <i class="fas fa-laptop fa-2x"></i>
-        <h1>Johnnys Dataservice</h1>
+        <h1 tabindex="1">Johnnys Dataservice</h1>
     </header>
 
-    <main class="main-container">
+    <main role="main" class="main-container">
 
-        <nav class="navigation">
-            <a href="#uppdrag">Uppdrag</a>
-            <a href="#about">Om företaget</a> 
-            <a href="#jobb">Sök Jobb</a>
-            <a href="#kontakt">Kontakt</a>
+        <nav role="navigation" class="navigation">
+            <a tabindex="2" href="#uppdrag">Uppdrag</a>
+            <a tabindex="2" href="#about">Om företaget</a> 
+            <a tabindex="2" href="#jobb">Sök Jobb</a>
+            <a tabindex="2" href="#kontakt">Kontakt</a>
         </nav>
 
-        <article class="intro">
+        <article role="article" class="intro">
             <div class="introitem">
-                <img class="imgJohnny" src="img/adult-beard-boy-220453.jpg">
+                <img class="imgJohnny" src="img/adult-beard-boy-220453.jpg" alt="Bild på företagets VD Johnny Johnnyson">
             </div>
            
             <div class="introitem2">
@@ -39,30 +39,30 @@
             </div>
         </article>
 
-        <section class="uppdrag" id="uppdrag">
-            <h2>Uppdrag</h2>
+        <section role="aside" class="uppdrag" id="uppdrag">
+            <h2 tabindex="3">Uppdrag</h2>
             <div class="uppdragBoxes">
                     <div>
-                        <a href="#" target="_blank"><img class="uppdragImgs" src="img/business-close-up-commerce-266176.jpg"></a>
+                        <a tabindex="3" href="#" target="_blank"><img class="uppdragImgs" src="img/business-close-up-commerce-266176.jpg" alt="Bild föreställande marknadsanalysering på en iPad."></a>
                         <figcaption>Konsultering och strategi för interna marknadsanalyser Postnord AB.</figcaption>
                     </div>
                     <div>
-                        <a href="#" target="_blank"><img class="uppdragImgs" src="img/cyber-security-cybersecurity-device-60504.jpg"></a>
+                        <a tabindex="3" href="#" target="_blank"><img class="uppdragImgs" src="img/cyber-security-cybersecurity-device-60504.jpg" alt="Bild föreställande nätverkssäkerhet."></a>
                         <figcaption>Säkerhetsåtgärder för javascriptinjicering hos Binero</figcaption>
                     </div>
                     <div>
-                        <a href="#" target="_blank"><img class="uppdragImgs" src="img/business-code-codes-207580.jpg"></a>
+                        <a tabindex="3" href="#" target="_blank"><img class="uppdragImgs" src="img/business-code-codes-207580.jpg" alt="Bild föreställande kod"></a>
                         <figcaption>Databasstrukturering hos Daisys.</figcaption>
                     </div>
         
                 </div>
         </section>
 
-        <section id="about">
-            <h2 class="abouth">Om Företaget</h2>
+        <section role="aside" id="about">
+            <h2 tabindex="4" class="abouth">Om Företaget</h2>
             <div class="about">
                     <div class="youtubevid">
-                        <iframe src="https://www.youtube.com/embed/EaptTxhh6sM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe title="office tour" src="https://www.youtube.com/embed/EaptTxhh6sM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen alt="video med rundvisning på Johnnys dataservice."></iframe>
                     </div>
                     <div class="rundtur1">
                     </div>
@@ -72,20 +72,20 @@
                 <h3 class="abouth">Häng med på en rundtur på kontoret!</h3>
         </section>
 
-        <section class="sjobb" id="jobb">
-            <h2>Sök Jobb</h2>
+        <section role="aside" class="sjobb" id="jobb">
+            <h2 tabindex="5">Sök Jobb</h2>
                <div class="jobb">
                     <div class="spot spot1">
-                        <h3>Market Analyst</h3>
-                        <p>Vi söker en anlytisk strateg blab la bla</p>
+                        <h3 tabindex="5">Market Analyst</h3>
+                        <p tabindex="5">Vi söker en anlytisk strateg blab la bla</p>
                     </div>
                     <div class="spot spot2">
-                        <h3>Junior Front-End</h3>
-                        <p>Vill du jobba med toppmoderna verktyg för att skapa de mest avancerade platformarna? blabla</p>
+                        <h3 tabindex="5">Junior Front-End</h3>
+                        <p tabindex="5">Vill du jobba med toppmoderna verktyg för att skapa de mest avancerade platformarna? blabla</p>
                     </div>
                     <div class="spot spot3">
-                        <h3>SQL handler</h3>
-                        <p>Vi har strul i databasen, snälla sök.</p>
+                        <h3 tabindex="5">SQL handler</h3>
+                        <p tabindex="5">Vi har strul i databasen, snälla sök.</p>
                     </div>
                     <div class="pdf">
                             <embed width="500" height="375" src="jobbansokning.pdf" 
@@ -98,28 +98,28 @@
         </section>
     </main>
 
-    <section class="kontakt" id="kontakt">
+    <section role="contentinfo" class="kontakt" id="kontakt">
         <div class="infoboxes">
-            <h2>Kontakt</h2>
+            <h2 tabindex="6">Kontakt</h2>
             <div>
-                <a href="tel:0735435355"><i class="fas fa-phone fa-2x"></i></a>
+                <a tabindex="6" href="tel:0735435355"><i class="fas fa-phone fa-2x"></i></a>
             </div>
             <div>
-                <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a tabindex="6" href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
             </div>
             <div>
-                <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a tabindex="6" href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
             <div>
-                <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a tabindex="6" href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
             <div>
-                <a href="mailto:daniel.hernqvist@chasacademy.se"><i class="far fa-envelope fa-2x"></i></a>
+                <a tabindex="6" href="mailto:daniel.hernqvist@chasacademy.se"><i class="far fa-envelope fa-2x"></i></a>
             </div>
         </div>
     </section>
-    <footer class="footer">
-            <a href="#top">Gå till toppen av sidan</a>
+    <footer role="contentinfo" class="footer">
+            <a tabindex="7" href="#top">Gå till toppen av sidan</a>
     </footer>
     </div>
 </body>
