@@ -37,7 +37,7 @@ h3 {
     font-size: 20px;
 }
 
-.header, .navigation, .footer, .infoboxes {
+.header, .navigation, .toppen, .infoboxes {
     background-color: #202925;
 }
 
@@ -105,9 +105,7 @@ h3 {
 .imgJohnny {
     width: 75%;
     height: auto;
-    border-radius: 10%;
-    float: center;
-}
+    border-radius: 10%;}
 
 .infoboxes {
     height: 200px;
@@ -117,12 +115,7 @@ h3 {
     justify-content: space-evenly;
 }
 
-i {
-    width: 20%;
-    height: 20;
-}
-
-footer {
+.toppen {
     text-align: center;
 }
 
@@ -282,7 +275,6 @@ i {
         font-size: 16px;
     }
     .uppdragBoxes {
-        flex: wrap;
         flex-direction: column;
         margin: 1%;
     }
